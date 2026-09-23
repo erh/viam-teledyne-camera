@@ -1,0 +1,16 @@
+{
+  "module_id": "erh:flir-spinnaker",
+  "visibility": "private",
+  "description": "Viam module for FLIR/Teledyne cameras using the Spinnaker SDK",
+  "models": [
+    {
+      "api": "rdk:component:camera",
+      "model": "erh:flir-spinnaker:blackfly"
+    }
+  ],
+  "entrypoint": "run.sh",
+  "build": {
+    "build": "make module.tar.gz",
+    "arch": ["linux/amd64", "linux/arm64"]
+  }
+}
